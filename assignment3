@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>
+            ASSIGNMENT 4
+        </title>
+        <style>
+            img{
+                height: 70px;
+                width: 71px;
+            }
+            li{
+                display: inline;
+                padding: auto;
+            }
+            ul{
+                list-style: none;
+            }
+           img:hover{
+            background-color: blue;
+           }
+           </style>
+    </head>
+    <body>
+    <div style="text-align: center; " >
+       <h1> HAVE YOU NOT FOUND THE RIGHT ONE? </h1>
+    </div>    
+    <ul>
+        <li> 
+           <label>flights</label> 
+        <img src="https://tse2.mm.bing.net/th?id=OIP._Yw3qsjQ6s31QZr7LXdcHwHaF0&pid=Api&P=0" alt="flights">
+        </li>
+        <li> 
+            hotels
+        <img src="http://cdn.onlinewebfonts.com/svg/img_105836.png" alt="hotels">
+        </li>
+        <li> 
+            RAIL DRISTHI
+        <img src="https://tse4.mm.bing.net/th?id=OIP.MHb0jpY0I3QZ95DqTeTTowHaHa&pid=Api&P=0" alt="RAIL DRISTHI">
+        </li>
+        <li> 
+            E-CATTERING
+        <img src="http://cdn.onlinewebfonts.com/svg/img_483040.png" alt="E-CATTERING">
+        </li>
+        <li> 
+            BUS
+        <img src="https://tse4.mm.bing.net/th?id=OIP.LiJUwYFEIpQsJu1zjxPJVQHaHa&pid=Api&P=0" alt="BUS">
+        </li>
+        </ul>
+        <ul>
+        <li> 
+            HOLIDAY PACKAGES
+        <img src="https://tse1.mm.bing.net/th?id=OIP.qZyTZ2dHQ_9fNfKZoqkl4AHaHa&pid=Api&P=0" alt="HOLIDAY PACKAGES">
+        </li>
+        <li> 
+            TOURIST TRAIN
+        <img src="https://tse4.mm.bing.net/th?id=OIP.mpJlYuiWZ3GL0ZkkAmp9GwHaFx&pid=Api&P=0" alt="TOURIST TRAIN">
+        </li>
+        <li> 
+            HILL RAILWAYS
+        <img src="https://tse1.mm.bing.net/th?id=OIP.QXSD-D-LRb0KRg2718yuMgHaHa&pid=Api&P=0" alt="HILL RAILWAYS">
+        </li>
+        <li> 
+            VALLEY
+        <img src="https://tse2.mm.bing.net/th?id=OIP.FVBv-Cyfz8EtI29V82e0CAHaHa&pid=Api&P=0" alt="VALLEY">
+        </li>
+    </ul>
+    </body>
+</html>
