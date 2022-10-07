@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<style>
+    div {
+        padding: 10px;
+    }
+
+    p {
+        font-family: cursive;
+    }
+
+    button {
+        border: 3px;
+        border-radius: 5px;
+        background-color: aqua;
+    }
+</style>
+<html>
+<body>
+    <div>
+        <img id="myImg"
+            src="https://media.istockphoto.com/photos/beautiful-waterfall-in-forest-at-erawan-national-park-in-thailand-picture-id1323033650?b=1&k=20&m=1323033650&s=170667a&w=0&h=ZXxTlFUI62q-o2mpVHlpeQEgDBa3ehFJars-IQRvuSQ="
+            width="100" height="132">
+    </div>
+    <div>
+        <button type="button" onclick="myFunction()">Change height of image</button>
+        <br>
+    </div>
+    <div>
+        <button type="button" onclick="myFunction3()">Change width of image</button>
+    </div>
+    <div id="mypara">
+        <p>
+            My name is Phani sri.I am currently studying computer as main stream in B.Tech. I am a student of
+            AndhraUniversity
+        </p>
+    </div>
+    <div>
+        <button type="button" onclick="myFunction2()">Change background </button>
+    </div>
+
+    <div>
+        <button type="button" onclick="myFunction4()">Change font colour </button>
+    </div>
+    <script>
+        function myFunction() {
+            document.getElementById("myImg").style.height = "300px";
+        }
+        function myFunction3() {
+            document.getElementById("myImg").style.width = "300px";
+        }
+
+        function myFunction2() {
+            document.getElementById("mypara").style.backgroundColor = "yellow";
+        }
+
+        function myFunction4() {
+            var element = document.getElementById("mypara");
+            element.style.color = "#FF0000";
+        }
+    </script>
+</body>
+</html>
