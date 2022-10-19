@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            table,th,td{
+                border: 2px solid rgb(255, 0, 89);
+            }
+        table,td,th{
+            border-collapse: collapse;
+        }
+            body{
+                justify-content: center;
+                display: flex;
+                background-color: aquamarine;
+            }
+            .employee-form{
+                height:700px;
+                width:700px;
+                background-color: rgb(195, 255, 0);
+            }
+           .save-button{
+            width:80px;
+            height:30px;
+            background-color: rgb(255, 0, 221);
+            color:#fff;
+            border: none;
+            border-radius: 5px;
+           }
+           input{
+            padding: 10px;
+            border-radius: 10px;
+            border-color: black;
+           }
+        </style>
+        <title>
+          FORMS
+        </title>
+    </head>
+    <body>
+        <div class="employee-form">
+            <h1 style="text-align:center">STUDENT FORM</h1>
+            <div style="padding:10px;margin:5px;padding: 50px;">
+                <form onsubmit="saveEmployee()" style="padding: 70px;">
+                    <label>
+                        First Name
+                    </label>
+                    <input type="text" name="fname" value="" id="fname"/>
+                    <br>
+                    <label>
+                        Last Name
+                    </label>
+                    <input type="text" name="lname" value="" id="lname"/>
+                    <br>
+                    <label>
+                       Email
+                    </label>
+                    <input type="email" name="email" value="" id="email"/>
+                    <br>
+                    <label> password</label>
+                    <input type="password" id="password" name="password " placeholder="password">
+                    <br>
+                    <label> age</label>
+                    <input type="number" id="age" name="age " placeholder="age">
+                    <br>
+                    <label> branch</label>
+                    <select name="branch" id="branch">
+                        <option >branch</option>
+                        <option value="CSE">CSE</option>
+                        <option value="ECE">ECE</option>
+                        <option value="CIVIL">CIVIL</option>
+                      </select>
+                      <input type="textarea" id="about" name="about " placeholder="tell me something about your college">
+                      <input type="submit" value="Save" class="save-button"/>
+                  </form>
+                  <table>
+                    <tr>
+                        <th>
+                            First Name
+                        </th>
+                        <th>
+                            Last Name
+                        </th>
+                        <th>
+                            Email
+                        </th>
+                        <th>
+password
+                        </th>
+                        <th>
+                          age
+                        </th>
+                        <th>
+                          branch
+                        </th>
+                        <th>
+                          about
+                        </th>
+                    </tr>
+                    <tbody id="data">
+
+                    </tbody>
+                </table>
+            </div>
+            
+        </div>
+        <script>
+            function saveEmployee(){
+                event.preventDefault();
+                var fname = document.getElementById("fname").value
+                var lname = document.getElementById("lname").value
+                var email = document.getElementById("email").value
+                var password = document.getElementById("password").value
+                var age = document.getElementById("age").value
+                var branch = document.getElementById("branch").value
+                var about = document.getElementById("about").value
+                var tbody = document.getElementById("data")
+                reset();
+
+                var tableData = `<tr>
+                    <td>${fname}</td>
+                    <td>${lname}</td>
+                    <td>${email}</td>
+                    <td>${password}</td>
+                    <td>${age}</td>
+                    <td>${branch}</td>
+                    <td>${about}</td>
+                    </tr>`
+                    tbody.innerHTML= tbody.innerHTML+tableData
+            }
+
+            function reset(){
+                document.getElementById("fname").value = ""
+                document.getElementById("lname").value=""
+                document.getElementById("email").value=""
+                document.getElementById("password").value = ""
+                document.getElementById("age").value = ""
+                document.getElementById("branch").value = ""
+                document.getElementById("about").value = ""
+
+              }
+        </script>
+    </body>
+</html>
